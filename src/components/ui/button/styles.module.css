@@ -1,0 +1,94 @@
+.primary,
+.secondary,
+.tertiary {
+	color: var(--primary-975);
+	font-family: var(--font-lato-regular);
+	white-space: nowrap;
+	text-overflow: clip;
+	transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.primary {
+	background-color: var(--primary-200);
+}
+
+.secondary {
+	background-color: var(--secondary-200);
+}
+
+.tertiary {
+	color: var(--primary-50);
+	background-color: transparent;
+	border: 1px solid var(--primary-100);
+}
+
+/** Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+	.primary:hover {
+		cursor: pointer;
+		color: var(--primary-50);
+		background-color: var(--primary-700);
+	}
+
+	.secondary:hover {
+		cursor: pointer;
+		color: var(--secondary-50);
+		background-color: var(--secondary-700);
+	}
+
+	.tertiary:hover {
+		cursor: pointer;
+		color: var(--primary-975);
+		background-color: var(--primary-50);
+	}
+}
+
+.primary:active {
+	cursor: pointer;
+	color: var(--primary-50);
+	background-color: var(--primary-800);
+}
+
+.secondary:active {
+	cursor: pointer;
+	color: var(--primary-50);
+	background-color: var(--secondary-800);
+}
+
+.tertiary:active {
+	cursor: pointer;
+	color: var(--primary-975);
+	background-color: var(--primary-100);
+}
+
+.small {
+	width: auto;
+	max-width: 80px;
+	height: 24px;
+	font-size: 12px;
+	padding: 4px 8px;
+	border-radius: 5px;
+}
+
+.medium {
+	width: auto;
+	max-width: 120px;
+	height: 36px;
+	font-size: 14px;
+	padding: 8px 12px;
+	border-radius: 5px;
+}
+
+.big {
+	width: auto;
+	max-width: 180px;
+	height: 48px;
+	font-size: 16px;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 5px;
+}
+
+.fullWidth {
+	width: 100%;
+}

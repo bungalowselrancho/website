@@ -1,0 +1,32 @@
+.flexCentered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flexJustifyBetween {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.titleContainer {
+	width: 100%;
+	height: 100%;
+	margin: 48px 0 20px 0;
+}
+
+.buttonContainer {
+	width: 100%;
+	gap: 16px;
+	margin: 24px 0;
+}
+
+.imageContainer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 70/45;
+	max-width: 1310px;
+	margin: 24px 0 32px 0;
+}

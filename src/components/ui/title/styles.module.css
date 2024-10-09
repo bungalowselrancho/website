@@ -1,0 +1,66 @@
+/** Variants */
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+	letter-spacing: -0.5px;
+	text-align: center;
+}
+
+.h1,
+.h2,
+.h3 {
+	line-height: 1.2;
+}
+
+.h4,
+.h5 {
+	line-height: 1.4;
+}
+
+.h1 {
+	width: 70%;
+	font-size: 40px;
+}
+
+.h2 {
+	font-size: 36px;
+}
+
+.h3 {
+	font-size: 32px;
+}
+
+.h4 {
+	font-size: 24px;
+}
+
+.h5 {
+	font-size: 20px;
+}
+
+.h5 {
+	font-size: 20px;
+}
+
+/** Fonts */
+
+.Arvo {
+	font-family: var(--font-arvo-bold);
+}
+
+.Lato {
+	font-family: var(--font-lato-bold);
+}
+
+/** Colors */
+
+.primary975 {
+	color: var(--primary-975);
+}
+
+.primary200 {
+	color: var(--primary-200);
+}

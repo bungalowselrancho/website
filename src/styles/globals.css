@@ -1,0 +1,108 @@
+:root {
+	/** Primary */
+	--primary-50: #ebffeb;
+	--primary-100: #d2ffc3;
+	--primary-200: #a7ff8d;
+	--primary-300: #6eff4b;
+	--primary-400: #39ff16;
+	--primary-500: #19eb00;
+	--primary-600: #0dbd00;
+	--primary-700: #0b8f00;
+	--primary-800: #0c6b04;
+	--primary-900: #0e5e09;
+	--primary-950: #003500;
+	--primary-975: #001400;
+
+	/** Secondary */
+	--secondary-50: #effefb;
+	--secondary-100: #c7fff5;
+	--secondary-200: #acf6e1;
+	--secondary-300: #51f7e0;
+	--secondary-400: #1de4ce;
+	--secondary-500: #04c8b5;
+	--secondary-600: #00b3a6;
+	--secondary-700: #058078;
+	--secondary-800: #0a6560;
+	--secondary-900: #0d5450;
+	--secondary-950: #003333;
+
+	/** Accent */
+	--accent-10: rgba(0, 20, 0, 0.1);
+	--accent-20: rgba(0, 20, 0, 0.2);
+
+	/** Neutrals */
+	--light-gray: #ccc;
+	--black: #0d0d0d;
+	--white: #f2f2f2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		/** Primary */
+		--primary-50: #ebffeb;
+		--primary-100: #d2ffc3;
+		--primary-200: #a7ff8d;
+		--primary-300: #6eff4b;
+		--primary-400: #39ff16;
+		--primary-500: #19eb00;
+		--primary-600: #0dbd00;
+		--primary-700: #0b8f00;
+		--primary-800: #0c6b04;
+		--primary-900: #0e5e09;
+		--primary-950: #003500;
+		--primary-975: #001400;
+
+		/** Secondary */
+		--secondary-50: #effefb;
+		--secondary-100: #c7fff5;
+		--secondary-200: #acf6e1;
+		--secondary-300: #51f7e0;
+		--secondary-400: #1de4ce;
+		--secondary-500: #04c8b5;
+		--secondary-600: #00b3a6;
+		--secondary-700: #058078;
+		--secondary-800: #0a6560;
+		--secondary-900: #0d5450;
+		--secondary-950: #003333;
+
+		/** Accent */
+		--accent-10: rgba(0, 20, 0, 0.1);
+		--accent-20: rgba(0, 20, 0, 0.2);
+		--accent-30: rgba(0, 20, 0, 0.3);
+
+		/** Neutrals */
+		--light-gray: #ccc;
+		--black: #0d0d0d;
+		--white: #f2f2f2;
+	}
+}
+
+html,
+body {
+	max-width: 100vw;
+}
+
+body {
+	color: var(--white);
+	-webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+}

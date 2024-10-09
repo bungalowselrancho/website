@@ -1,0 +1,68 @@
+/** Variants */
+
+.pCenter,
+.pLeft,
+.pCardDetails,
+.pFooter {
+	width: 100%;
+	word-spacing: 1px;
+}
+
+.pCenter {
+	font-size: 16px;
+	line-height: 1.8;
+	letter-spacing: -0.5px;
+	text-align: center;
+}
+
+.pLeft {
+	font-size: 16px;
+	line-height: 1.2;
+	letter-spacing: -0.5px;
+	text-align: left;
+}
+
+.pCardDetailsIcon {
+	width: auto;
+	font-size: 11px;
+	line-height: 1.5;
+}
+
+.pCardDetailsPrice {
+	width: auto;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.pFooter {
+	width: auto;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+/** Fonts */
+
+.Lato {
+	font-family: var(--font-lato-regular);
+}
+
+.LatoItalic {
+	font-size: inherit;
+	color: inherit;
+	text-decoration: underline;
+	font-family: var(--font-lato-regular-italic);
+}
+
+/** Text Color */
+
+.primary975 {
+	color: var(--primary-975);
+}
+
+.primary200 {
+	color: var(--primary-200);
+}
+
+.primary50 {
+	color: var(--primary-50);
+}

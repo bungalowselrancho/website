@@ -1,0 +1,12 @@
+.tag {
+	display: block;
+	padding: 4px 8px;
+	background-color: var(--primary-975);
+	border-radius: 4px;
+}
+
+.tagText {
+	font-family: var(--font-lato-regular);
+	font-size: 14px;
+	color: var(--primary-100);
+}
