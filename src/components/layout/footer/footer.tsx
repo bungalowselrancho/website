@@ -75,8 +75,8 @@ export default function Footer() {
 						color={'primary975'}
 						partOf={'Footer'}
 					>
-						© {currentDate.getFullYear()} El Rancho. All rights
-						reserved.
+						© {currentDate.getFullYear()} El Rancho. Todos los
+						derechos reservados.
 					</Text>
 				</div>
 			</footer>
