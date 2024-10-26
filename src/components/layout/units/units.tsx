@@ -1,18 +1,21 @@
+//* Next Core
+import Link from 'next/link';
+
 //* Types
 import { CardProps } from '@/types';
 
 //* Components
+import { RevealFade } from '../animate';
 import { Title, Text, Button } from '@/components/ui';
 import { Card } from '@/components';
-import Link from 'next/link';
 
 //* Styles
 import styles from './styles.module.css';
 
 //* Images
-import Clara from '@/public/images/clara.webp';
-import Guille from '@/public/images/guille.webp';
-import MauroI from '@/public/images/mauro-i.webp';
+import Clara from '@/../public/images/clara.webp';
+import Guille from '@/../public/images/guille.webp';
+import MauroI from '@/../public/images/mauro-i.webp';
 
 //* Units Cards Data
 const cards: CardProps[] = [
@@ -45,27 +48,39 @@ const cards: CardProps[] = [
 export default function Units() {
 	return (
 		<>
-			<div className={`${styles.flexCenter} ${styles.titleContainer}`}>
-				<Title variant={'h2'} font={'Arvo'} color={'primary975'}>
-					Unidades
-				</Title>
-			</div>
-			<div className={styles.textContainer}>
-				<Text variant={'pCenter'} font={'Lato'} color={'primary975'}>
-					Alojamiento con el toque{' '}
-					{<Text font={'LatoItalic'}>familiar</Text>} que mereces.
-				</Text>
-			</div>
-			<div className={`${styles.flexCenter} ${styles.cardsContainer}`}>
-				{cards.map((card) => (
-					<Card {...card} />
-				))}
-			</div>
-			<div className={`${styles.flexCenter} ${styles.buttonContainer}`}>
-				<Button variant={'secondary'} size={'big'}>
-					<Link href={'/'}>Ver unidades</Link>
-				</Button>
-			</div>
+			<RevealFade>
+				<div
+					className={`${styles.flexCenter} ${styles.titleContainer}`}
+				>
+					<Title variant={'h2'} font={'Arvo'} color={'primary975'}>
+						Unidades
+					</Title>
+				</div>
+				<div className={styles.textContainer}>
+					<Text
+						variant={'pCenter'}
+						font={'Lato'}
+						color={'primary975'}
+					>
+						Alojamiento con el toque{' '}
+						{<Text font={'LatoItalic'}>familiar</Text>} que mereces.
+					</Text>
+				</div>
+				<div
+					className={`${styles.flexCenter} ${styles.cardsContainer}`}
+				>
+					{cards.map((card, i) => (
+						<Card key={i} {...card} />
+					))}
+				</div>
+				<div
+					className={`${styles.flexCenter} ${styles.buttonContainer}`}
+				>
+					<Button variant={'secondary'} size={'big'}>
+						<Link href={'/'}>Ver unidades</Link>
+					</Button>
+				</div>
+			</RevealFade>
 		</>
 	);
 }

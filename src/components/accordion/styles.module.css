@@ -1,0 +1,39 @@
+.question {
+	width: 100%;
+	min-width: 335px;
+	max-width: 768px;
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid var(--primary-975);
+}
+
+.answer {
+	width: 100%;
+	min-width: 335px;
+	max-width: 768px;
+	overflow: hidden;
+}
+
+.shown {
+	height: auto;
+	max-height: 1000px;
+	transition: all 500ms ease-in-out;
+	padding-bottom: 20px;
+}
+
+.hidden {
+	max-height: 0;
+	transition: all 500ms ease-in-out;
+}
+
+.rotate {
+	transform: rotate(180deg);
+	transition: all 300ms ease-in-out;
+}
+
+.idle {
+	transform: rotate(0deg);
+	transition: all 300ms ease-in-out;
+}

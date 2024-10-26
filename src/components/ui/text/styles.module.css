@@ -34,6 +34,30 @@
 	line-height: 1.5;
 }
 
+.pCardComment {
+	line-height: 1.5;
+}
+
+.pAccordionQuestion {
+	line-height: 1.5;
+
+	@media (min-width: 375px) {
+		& {
+			width: 295px;
+		}
+	}
+
+	@media (min-width: 425px) {
+		& {
+			width: 100%;
+		}
+	}
+}
+
+.pAccordionAnswer {
+	line-height: 1.5;
+}
+
 .pFooter {
 	width: auto;
 	font-size: 14px;
@@ -53,6 +77,10 @@
 	font-family: var(--font-lato-regular-italic);
 }
 
+.Arvo {
+	font-family: var(--font-arvo-bold);
+}
+
 /** Text Color */
 
 .primary975 {
@@ -65,4 +93,8 @@
 
 .primary50 {
 	color: var(--primary-50);
+}
+
+.secondary200 {
+	color: var(--secondary-200);
 }

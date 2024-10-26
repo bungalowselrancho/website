@@ -1,0 +1,13 @@
+.swiper {
+	width: 335px;
+	height: auto;
+}
+
+.carouselSlide {
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}

@@ -5,7 +5,7 @@ import { TitleProps } from '@/types';
 import styles from './styles.module.css';
 
 export default function Title(props: TitleProps) {
-	const { variant, font, color } = props;
+	const { variant, font, color, partOf } = props;
 
 	return (
 		<>
@@ -37,9 +37,18 @@ export default function Title(props: TitleProps) {
 					{props.children}
 				</h4>
 			)}
-			{variant == 'h5' && font && color && (
+			{variant == 'h5' && font && color && !partOf && (
 				<h5
 					className={`${styles[variant]} ${styles[font]} ${styles[color]}`}
+				>
+					{props.children}
+				</h5>
+			)}
+			{variant == 'h5' && font && color && partOf && (
+				<h5
+					className={`${styles[variant]} ${styles[font]} ${
+						styles[color]
+					} ${styles[`p${partOf}`]}`}
 				>
 					{props.children}
 				</h5>

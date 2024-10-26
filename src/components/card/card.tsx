@@ -2,11 +2,8 @@
 import { CardProps } from '@/types';
 
 //* Components
-import Tag from '../ui/tag';
+import { Tag, Title, Text, Button } from '@/components/ui';
 import Image from 'next/image';
-import Title from '../ui/title';
-import Text from '../ui/text';
-import Button from '../ui/button';
 import Link from 'next/link';
 
 import {
@@ -19,7 +16,7 @@ import {
 //* Styles
 import styles from './styles.module.css';
 
-function Card(props: CardProps) {
+export default function Card(props: CardProps) {
 	return (
 		<>
 			<Link href={props.route}>
@@ -31,6 +28,7 @@ function Card(props: CardProps) {
 						<Image
 							quality={100}
 							fill={true}
+							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 							src={props.image}
 							alt={`${props.title} | Bungalows El Rancho`}
 						></Image>
@@ -69,6 +67,7 @@ function Card(props: CardProps) {
 								variant={'h5'}
 								font={'Arvo'}
 								color={'primary200'}
+								partOf={'CardContentTitle'}
 							>
 								{props.title}
 							</Title>
@@ -124,5 +123,3 @@ function Card(props: CardProps) {
 		</>
 	);
 }
-
-export default Card;

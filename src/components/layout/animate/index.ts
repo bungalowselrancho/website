@@ -1,3 +1,3 @@
-import { Transition, Animation } from './animate';
+import { Loader, Transition, Animation, RevealFade } from './animate';
 
-export { Transition, Animation };
+export { Loader, Transition, Animation, RevealFade };
