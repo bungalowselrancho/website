@@ -11,6 +11,8 @@ import styles from './styles.module.css';
 import Link from 'next/link';
 
 export default function Footer() {
+	const currentDate = new Date();
+
 	return (
 		<>
 			<footer className={styles.footer}>
@@ -73,7 +75,8 @@ export default function Footer() {
 						color={'primary975'}
 						partOf={'Footer'}
 					>
-						© 2024 El Rancho. All rights reserved.
+						© {currentDate.getFullYear()} El Rancho. All rights
+						reserved.
 					</Text>
 				</div>
 			</footer>
