@@ -9,9 +9,9 @@ import styles from './styles.module.css';
 export default function Maps() {
 	return (
 		<>
-			<APIProvider apiKey={process.env.GOOGLE_MAPS_API_KEY}>
+			<APIProvider apiKey={'AIzaSyAvsNSqJu6fPHUXyivHkZEK7E4mROBwL7E'}>
 				<Map
-					mapId="4ee2f601a80ceaf2"
+					mapId={'311ac32c3a732a0a'}
 					className={styles.map}
 					defaultCenter={{
 						lat: -32.21541213989258,
