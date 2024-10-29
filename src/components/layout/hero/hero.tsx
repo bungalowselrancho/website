@@ -1,5 +1,7 @@
-//* Components
+//* Next Core
 import Image from 'next/image';
+
+//* Components
 import { Title, Text, Button } from '@/components/ui';
 
 //* Images
@@ -35,7 +37,7 @@ export default function Hero() {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<Button variant="primary" size={'big'}>
+					<Button variant={'primary'} size={'big'}>
 						Reserva tu estadía
 					</Button>
 				</a>
@@ -44,7 +46,7 @@ export default function Hero() {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<Button variant="secondary" size={'big'}>
+					<Button variant={'secondary'} size={'big'}>
 						Contáctenos
 					</Button>
 				</a>
@@ -56,7 +58,7 @@ export default function Hero() {
 					fill={true}
 					src={heroImage}
 					alt="Bungalows El Rancho | Hero Image"
-				></Image>
+				/>
 			</div>
 		</>
 	);

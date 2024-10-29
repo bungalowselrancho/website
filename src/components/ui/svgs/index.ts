@@ -32,6 +32,8 @@ import {
 	ChevronIcon,
 	FacebookIcon,
 	InstagramIcon,
+	WhatsappIcon,
+	MailIcon,
 } from './svgs';
 
 export {
@@ -67,4 +69,6 @@ export {
 	ChevronIcon,
 	FacebookIcon,
 	InstagramIcon,
+	WhatsappIcon,
+	MailIcon,
 };

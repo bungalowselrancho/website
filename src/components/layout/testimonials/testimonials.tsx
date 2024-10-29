@@ -2,12 +2,12 @@
 import { TestimonialCardProps } from '@/types';
 
 //* Components
-import { RevealFade } from '../animate';
+import { RevealFade } from '@/components/layout';
 import { Title, Text } from '@/components/ui';
+import { TestimonialCard } from '@/components';
 
 //* Styles
 import styles from './styles.module.css';
-import { TestimonialCard } from '@/components';
 
 //* Images
 import Natalia from '@/../public/images/testimonial-1.png';

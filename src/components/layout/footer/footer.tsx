@@ -1,3 +1,6 @@
+//* Next Core
+import Link from 'next/link';
+
 //* Components
 import {
 	LogoMinified,
@@ -8,7 +11,6 @@ import {
 
 //* Styles
 import styles from './styles.module.css';
-import Link from 'next/link';
 
 export default function Footer() {
 	const currentDate = new Date();
@@ -48,7 +50,6 @@ export default function Footer() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							:
 							<FacebookIcon
 								width={24}
 								height={24}

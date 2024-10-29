@@ -16,6 +16,14 @@
 	margin: 32px 0 20px 0;
 }
 
+.textContainer {
+	@media (min-width: 1085px) {
+		& {
+			margin-bottom: 64px;
+		}
+	}
+}
+
 .buttonContainer {
 	width: 100%;
 	gap: 16px;

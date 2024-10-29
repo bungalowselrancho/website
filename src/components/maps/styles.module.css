@@ -1,0 +1,28 @@
+.map {
+	width: 335px;
+	height: 228px;
+	border: 1px solid var(--accent-10);
+	border-radius: 20px;
+	overflow: hidden;
+	margin-bottom: 32px;
+
+	@media (min-width: 768px) {
+		& {
+			margin: 0;
+		}
+	}
+
+	@media (min-width: 1120px) {
+		& {
+			width: 460px;
+			height: 310px;
+		}
+	}
+
+	@media (min-width: 1440px) {
+		& {
+			width: 656px;
+			height: 440px;
+		}
+	}
+}

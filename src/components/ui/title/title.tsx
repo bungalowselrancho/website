@@ -9,16 +9,34 @@ export default function Title(props: TitleProps) {
 
 	return (
 		<>
-			{variant == 'h1' && font && color && (
+			{variant == 'h1' && font && color && !partOf && (
 				<h1
 					className={`${styles[variant]} ${styles[font]} ${styles[color]}`}
 				>
 					{props.children}
 				</h1>
 			)}
-			{variant == 'h2' && font && color && (
+			{variant == 'h1' && font && color && partOf && (
+				<h1
+					className={`${styles[variant]} ${styles[font]} ${
+						styles[color]
+					} ${styles[`t${partOf}`]}`}
+				>
+					{props.children}
+				</h1>
+			)}
+			{variant == 'h2' && font && color && !partOf && (
 				<h2
 					className={`${styles[variant]} ${styles[font]} ${styles[color]}`}
+				>
+					{props.children}
+				</h2>
+			)}
+			{variant == 'h2' && font && color && partOf && (
+				<h2
+					className={`${styles[variant]} ${styles[font]} ${
+						styles[color]
+					} ${styles[`t${partOf}`]}`}
 				>
 					{props.children}
 				</h2>
@@ -48,7 +66,7 @@ export default function Title(props: TitleProps) {
 				<h5
 					className={`${styles[variant]} ${styles[font]} ${
 						styles[color]
-					} ${styles[`p${partOf}`]}`}
+					} ${styles[`t${partOf}`]}`}
 				>
 					{props.children}
 				</h5>

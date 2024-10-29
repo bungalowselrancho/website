@@ -1,5 +1,5 @@
 //* Components
-import { RevealFade } from '../animate';
+import { RevealFade } from '@/components/layout';
 import { Title, Text, Button } from '@/components/ui';
 
 //* Styles

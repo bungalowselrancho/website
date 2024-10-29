@@ -1,7 +1,7 @@
 'use client';
 
 //* React Core
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 
 //* Framer-Motion
 import { motion, useAnimation, useInView } from 'framer-motion';
@@ -11,7 +11,6 @@ import { LogoComplete } from '@/components/ui';
 
 //* Styles
 import styles from './styles.module.css';
-import { useEffect } from 'react';
 
 export function Loader() {
 	return (

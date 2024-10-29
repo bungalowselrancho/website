@@ -10,14 +10,14 @@
 
 .pCenter {
 	font-size: 16px;
-	line-height: 1.8;
+	line-height: 1.5;
 	letter-spacing: -0.5px;
 	text-align: center;
 }
 
 .pLeft {
 	font-size: 16px;
-	line-height: 1.2;
+	line-height: 1.5;
 	letter-spacing: -0.5px;
 	text-align: left;
 }
@@ -31,10 +31,6 @@
 .pCardDetailsPrice {
 	width: auto;
 	font-size: 14px;
-	line-height: 1.5;
-}
-
-.pCardComment {
 	line-height: 1.5;
 }
 

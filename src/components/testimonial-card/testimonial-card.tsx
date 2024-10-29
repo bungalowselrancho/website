@@ -41,7 +41,6 @@ export default function Card(props: TestimonialCardProps) {
 							variant={'pLeft'}
 							font={'Lato'}
 							color={'primary50'}
-							partOf={'CardComment'}
 						>
 							"{props.comment}"
 						</Text>

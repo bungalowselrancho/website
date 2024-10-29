@@ -1,8 +1,8 @@
 //* Types
-import { CarouselItemType } from '@/types';
+import { CarouselItemType, DetailsCardProps } from '@/types';
 
 //* Components
-import { RevealFade } from '../animate';
+import { RevealFade } from '@/components/layout';
 import {
 	Title,
 	Text,
@@ -25,8 +25,7 @@ import {
 	FridgeIcon,
 	ParkIcon,
 } from '@/components/ui';
-
-import { Carousel, DetailsCard } from '@/components';
+import { IconsCarousel, DetailsCard } from '@/components';
 
 //* Styles
 import styles from './styles.module.css';
@@ -97,6 +96,35 @@ const securityItems: CarouselItemType[] = [
 	},
 ];
 
+//* Details Cards Data
+
+const detailsCardData: DetailsCardProps[] = [
+	{
+		title: 'Experiencia familiar',
+		details:
+			'Con más de 20 años en el sector, nos enfocamos en brindar un ambiente familiar y acogedor, donde cada detalle está pensado para el confort de los huéspedes.',
+		children: <HomeHeartIcon width={48} height={48} fill={'#0D5450'} />,
+	},
+	{
+		title: 'Compromiso y calidad',
+		details:
+			'La dedicación de nuestro equipo se refleja en la calidad del servicio, asegurando que los visitantes tengan una experiencia inolvidable.',
+		children: <StarIcon width={48} height={48} fill={'#0D5450'} />,
+	},
+	{
+		title: 'Variedad de alojamiento',
+		details:
+			'Ofrecemos seis opciones de alojamiento que van desde monoambientes hasta bungalows de dos ambientes, adaptados a diferentes necesidades y grupos.',
+		children: <HousesIcon width={48} height={48} fill={'#0D5450'} />,
+	},
+	{
+		title: 'Entorno natural',
+		details:
+			'La cercanía a zonas de arroyos y parques nacionales permite disfrutar de actividades al aire libre, como pesca, senderismo y exploración de la naturaleza.',
+		children: <LeafIcon width={48} height={48} fill={'#0D5450'} />,
+	},
+];
+
 export default function Beneficts() {
 	return (
 		<>
@@ -121,34 +149,17 @@ export default function Beneficts() {
 				<div
 					className={`${styles.flexCenter} ${styles.flexColumn} ${styles.detailsCardsContainer}`}
 				>
-					<DetailsCard
-						title="Experiencia familiar"
-						details="Con más de 20 años en el sector, nos enfocamos en brindar un ambiente familiar y acogedor, donde cada detalle está pensado para el confort de los huéspedes."
-					>
-						<HomeHeartIcon
-							width={48}
-							height={48}
-							fill={'#0D5450'}
-						/>
-					</DetailsCard>
-					<DetailsCard
-						title="Compromiso y calidad"
-						details="La dedicación de nuestro equipo se refleja en la calidad del servicio, asegurando que los visitantes tengan una experiencia inolvidable."
-					>
-						<StarIcon width={48} height={48} fill={'#0D5450'} />
-					</DetailsCard>
-					<DetailsCard
-						title="Variedad de alojamiento"
-						details="Ofrecemos seis opciones de alojamiento que van desde monoambientes hasta bungalows de dos ambientes, adaptados a diferentes necesidades y grupos."
-					>
-						<HousesIcon width={48} height={48} fill={'#0D5450'} />
-					</DetailsCard>
-					<DetailsCard
-						title="Entorno natural"
-						details="La cercanía a zonas de arroyos y parques nacionales permite disfrutar de actividades al aire libre, como pesca, senderismo y exploración de la naturaleza."
-					>
-						<LeafIcon width={48} height={48} fill={'#0D5450'} />
-					</DetailsCard>
+					{detailsCardData.map((item, i) => {
+						return (
+							<DetailsCard
+								key={i}
+								title={item.title}
+								details={item.details}
+							>
+								{item.children}
+							</DetailsCard>
+						);
+					})}
 				</div>
 				<div className={`${styles.flexCenter} ${styles.flexColumn}`}>
 					<div
@@ -163,35 +174,41 @@ export default function Beneficts() {
 						</Title>
 					</div>
 					<div className={styles.carouselContainer}>
-						<div>
+						<div
+							className={`${styles.flexCenter} ${styles.flexColumn} ${styles.carouselItemContainer}`}
+						>
 							<Text
 								variant={'pCenter'}
 								font={'Lato'}
 								color={'primary975'}
 							>
-								Instalaciones
+								<b>Instalaciones</b>
 							</Text>
-							<Carousel items={facilitiesItems}></Carousel>
+							<IconsCarousel items={facilitiesItems} />
 						</div>
-						<div>
+						<div
+							className={`${styles.flexCenter} ${styles.flexColumn} ${styles.carouselItemContainer}`}
+						>
 							<Text
 								variant={'pCenter'}
 								font={'Lato'}
 								color={'primary975'}
 							>
-								Equipamientos
+								<b>Equipamientos</b>
 							</Text>
-							<Carousel items={equipementsItems}></Carousel>
+							<IconsCarousel items={equipementsItems} />
 						</div>
-						<div>
+						<div
+							className={`${styles.flexCenter} ${styles.flexColumn} ${styles.carouselItemContainer}`}
+						>
 							<Text
 								variant={'pCenter'}
 								font={'Lato'}
 								color={'primary975'}
 							>
-								Servicios y Seguridad
+								<b>Servicios y Seguridad</b>
 							</Text>
-							<Carousel items={securityItems}></Carousel>
+							<IconsCarousel items={securityItems} />
 						</div>
 					</div>
 				</div>

@@ -406,6 +406,41 @@ const InstagramIcon = (props: SVGProps) => (
 	</svg>
 );
 
+const WhatsappIcon = (props: SVGProps) => (
+	<svg xmlns="http://www.w3.org/2000/svg" {...props} fill="none">
+		<g clipPath="url(#a)">
+			<path
+				fill={props.fill}
+				d="M38.1 9.82C34.36 6.06 29.38 4 24.08 4 13.16 4 4.26 12.9 4.26 23.82c0 3.5.92 6.9 2.64 9.9L4.1 44l10.5-2.76c2.9 1.58 6.16 2.42 9.48 2.42 10.92 0 19.82-8.9 19.82-19.82 0-5.3-2.06-10.28-5.8-14.02ZM24.08 40.3c-2.96 0-5.86-.8-8.4-2.3l-.6-.36-6.24 1.64 1.66-6.08-.4-.62a16.528 16.528 0 0 1-2.52-8.76c0-9.08 7.4-16.48 16.48-16.48 4.4 0 8.54 1.72 11.64 4.84 3.12 3.12 4.82 7.26 4.82 11.66.04 9.08-7.36 16.46-16.44 16.46Zm9.04-12.32c-.5-.24-2.94-1.44-3.38-1.62-.46-.16-.78-.24-1.12.24-.34.5-1.28 1.62-1.56 1.94-.28.34-.58.38-1.08.12-.5-.24-2.1-.78-3.98-2.46-1.48-1.32-2.46-2.94-2.76-3.44-.28-.5-.04-.76.22-1.02.22-.22.5-.58.74-.86s.34-.5.5-.82c.16-.34.08-.62-.04-.86s-1.12-2.68-1.52-3.68c-.4-.96-.82-.84-1.12-.86h-.96c-.34 0-.86.12-1.32.62-.44.5-1.72 1.7-1.72 4.14 0 2.44 1.78 4.8 2.02 5.12.24.34 3.5 5.34 8.46 7.48 1.18.52 2.1.82 2.82 1.04 1.18.38 2.26.32 3.12.2.96-.14 2.94-1.2 3.34-2.36.42-1.16.42-2.14.28-2.36-.14-.22-.44-.32-.94-.56Z"
+			/>
+		</g>
+		<defs>
+			<clipPath id="a">
+				<path fill="#fff" d="M0 0h48v48H0z" />
+			</clipPath>
+		</defs>
+	</svg>
+);
+
+const MailIcon = (props: SVGProps) => (
+	<svg xmlns="http://www.w3.org/2000/svg" {...props} fill="none">
+		<path
+			stroke={props.fill}
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			strokeWidth={3}
+			d="M8 8h32c2.2 0 4 1.8 4 4v24c0 2.2-1.8 4-4 4H8c-2.2 0-4-1.8-4-4V12c0-2.2 1.8-4 4-4Z"
+		/>
+		<path
+			stroke={props.fill}
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			strokeWidth={3}
+			d="M44 12 24 26 4 12"
+		/>
+	</svg>
+);
+
 export {
 	LogoComplete,
 	LogoMinified,
@@ -439,4 +474,6 @@ export {
 	ChevronIcon,
 	FacebookIcon,
 	InstagramIcon,
+	WhatsappIcon,
+	MailIcon,
 };

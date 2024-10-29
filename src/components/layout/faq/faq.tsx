@@ -1,11 +1,13 @@
+//* Types
+import { AccordionProps } from '@/types';
+
 //* Components
-import { RevealFade } from '../animate';
-import { Accordion } from '@/components';
+import { RevealFade } from '@/components/layout';
 import { Title, Text, Button } from '@/components/ui';
+import { Accordion } from '@/components';
 
 //* Styles
 import styles from './styles.module.css';
-import { AccordionProps } from '@/types';
 
 const faqs: AccordionProps[] = [
 	{

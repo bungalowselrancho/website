@@ -38,6 +38,8 @@ import {
 	ChevronIcon,
 	FacebookIcon,
 	InstagramIcon,
+	WhatsappIcon,
+	MailIcon,
 } from '@/components/ui/svgs';
 
 export {
@@ -78,4 +80,6 @@ export {
 	ChevronIcon,
 	FacebookIcon,
 	InstagramIcon,
+	WhatsappIcon,
+	MailIcon,
 };

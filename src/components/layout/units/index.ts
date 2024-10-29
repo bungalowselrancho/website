@@ -1,3 +1,3 @@
-import Units from './units';
+import { Units, UnitsPath } from './units';
 
-export default Units;
+export { Units, UnitsPath };
