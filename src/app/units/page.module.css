@@ -10,7 +10,7 @@
 	align-items: center;
 	background: var(--primary-50);
 
-	@media (min-width: 1120px) {
+	@media (min-width: 900px) {
 		& {
 			padding: 64px;
 			padding-bottom: 32px;

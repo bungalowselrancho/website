@@ -61,11 +61,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			{/* <link rel="icon" type="image/png" href="/icon2.png"></link> */}
 			<body
 				className={`${arvoBold.variable} ${latoBold.variable} ${latoRegular.variable} ${latoRegularItalic.variable}`}
 			>
-				<Loader />
 				<Header />
 				{children}
 				<Footer />
