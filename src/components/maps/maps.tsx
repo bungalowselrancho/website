@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 export default function Maps() {
 	return (
 		<>
-			<APIProvider apiKey={'AIzaSyD9-RoIc1BVftx7odu7_l7lMaOWa2EOy3s'}>
+			<APIProvider apiKey={process.env.GOOGLE_MAPS_API_KEY}>
 				<Map
 					mapId="4ee2f601a80ceaf2"
 					className={styles.map}
