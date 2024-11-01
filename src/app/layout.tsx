@@ -4,8 +4,32 @@ import localFont from 'next/font/local';
 
 //* Metadata
 export const metadata: Metadata = {
-	title: 'Inicio | Bungalows El Rancho',
-	description: 'Sitio web oficial de Bungalows "El Rancho"',
+	title: 'Bungalows El Rancho',
+	description: 'Sitio web oficial de Bungalows El Rancho',
+	metadataBase: new URL('https://bungalowselrancho.com.ar'),
+	openGraph: {
+		title: 'Bungalows El Rancho',
+		description: 'Sitio web oficial de Bungalows El Rancho',
+		url: 'https://bungalowselrancho.com.ar',
+		siteName: 'Bungalows El Rancho',
+		images: [
+			{
+				url: new URL(
+					'https://res.cloudinary.com/dz0fbmmt0/image/upload/v1730426565/thumbnail_gjfctw.png'
+				),
+			},
+		],
+	},
+	twitter: {
+		title: 'Bungalows El Rancho',
+		description: 'Sitio web oficial de Bungalows El Rancho',
+		images: [
+			new URL(
+				'https://res.cloudinary.com/dz0fbmmt0/image/upload/v1730426565/thumbnail_gjfctw.png'
+			),
+		],
+	},
+
 	icons: [
 		{
 			rel: 'icon',

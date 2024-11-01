@@ -1,3 +1,12 @@
+//* Next Core
+import { Metadata } from 'next';
+
+//* Metadata
+export const metadata: Metadata = {
+	title: 'Inicio | Bungalows El Rancho',
+	description: 'Inicio | Sitio web oficial de Bungalows El Rancho',
+};
+
 //* Layout Components
 import {
 	Animation,

@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 //* Metadata
 export const metadata: Metadata = {
 	title: 'Contacto | Bungalows El Rancho',
-	description: 'Contacto | Sitio web oficial de Bungalows "El Rancho"',
+	description: 'Contacto | Sitio web oficial de Bungalows El Rancho',
 };
 
 //* Layout Components

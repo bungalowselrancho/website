@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 //* Metadata
 export const metadata: Metadata = {
 	title: 'Unidad | Bungalows El Rancho',
-	description: 'Unidad | Sitio web oficial de Bungalows "El Rancho"',
+	description: 'Unidad | Sitio web oficial de Bungalows El Rancho',
 };
 
 //* Types
