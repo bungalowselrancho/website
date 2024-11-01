@@ -49,7 +49,7 @@ const latoRegularItalic = localFont({
 });
 
 //* Components
-import { Loader, Header, Footer } from '@/components/layout';
+import { Header, Footer } from '@/components/layout';
 
 //* Styles
 import '@/styles/globals.css';

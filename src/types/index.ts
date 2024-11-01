@@ -7,6 +7,7 @@ export type SVGProps = {
 	fill?: string;
 	width: number;
 	height: number;
+	onClick?: () => void;
 };
 
 //* Title
@@ -73,14 +74,36 @@ export type TagProps = {
 	children?: React.ReactNode;
 };
 
-//* Carousel
-export type CarouselItemType = {
+//* Icons Carousel
+export type IconsCarouselItemType = {
 	title: string;
 	children: React.ReactNode;
 };
 
-export type CarouselProps = {
-	items: CarouselItemType[];
+export type IconsCarouselProps = {
+	items: IconsCarouselItemType[];
+};
+
+//* Images Carousel
+
+export type ImagesCarouselItemType = {
+	title: string;
+	src: StaticImageData;
+};
+
+export type ImagesCarouselProps = {
+	items: ImagesCarouselItemType[];
+};
+
+//* Unit Images Carousel
+
+export type UnitImagesCarouselItemType = {
+	title: string;
+	images: StaticImageData[];
+};
+
+export type UnitImagesCarouselProps = {
+	items: UnitImagesCarouselItemType;
 };
 
 //* Accordion
@@ -89,3 +112,22 @@ export type AccordionProps = {
 	question: string;
 	answer: React.ReactNode | string;
 };
+
+//* Dynamic Unit
+export type DynamicUnitProps = {
+	id: string;
+	tag: string;
+	title: string;
+	description: string[];
+	images: StaticImageData[];
+	environments: string;
+	people: number;
+	children?: React.ReactNode;
+};
+
+//* Dynamic Unit Card
+
+export type DynamicUnitCardProps = Pick<
+	DynamicUnitProps,
+	'tag' | 'title' | 'images'
+>;

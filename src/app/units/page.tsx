@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 
 //* Metadata
 export const metadata: Metadata = {
-	title: 'Unidades | Bungalows El Rancho',
+	title: `Unidades | Bungalows El Rancho`,
 	description: 'Unidades | Sitio web oficial de Bungalows "El Rancho"',
 };
 
