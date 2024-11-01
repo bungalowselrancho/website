@@ -54,6 +54,20 @@
 	line-height: 1.5;
 }
 
+.pUnitDetails {
+	width: auto;
+	font-size: 14px;
+}
+
+.pUnitCallToAction {
+	width: 100%;
+	font-size: 12px;
+
+	@media (min-width: 960px) {
+		text-align: left;
+	}
+}
+
 .pFooter {
 	width: auto;
 	font-size: 14px;

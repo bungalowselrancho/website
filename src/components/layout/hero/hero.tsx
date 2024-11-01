@@ -32,7 +32,6 @@ export default function Hero() {
 			</div>
 			<div className={`${styles.flexCentered} ${styles.buttonContainer}`}>
 				<a
-					className={styles.footerLink}
 					href="https://www.alquilerargentina.com/alojamientos/qc35-Bungalow-Bungalows-El-Rancho-San-Jos%C3%A9.html"
 					target="_blank"
 					rel="noopener noreferrer"

@@ -1,5 +1,5 @@
 //* Types
-import { CarouselItemType, DetailsCardProps } from '@/types';
+import { ImagesCarouselItemType, DetailsCardProps } from '@/types';
 
 //* Components
 import { RevealFade } from '@/components/layout';
@@ -8,7 +8,6 @@ import { DetailsCard, ImagesCarousel, Maps } from '@/components';
 
 //* Styles
 import styles from './styles.module.css';
-import Image from 'next/image';
 
 //* Details Card Data
 
@@ -33,66 +32,26 @@ import Termas from '@/../public/images/termas.webp';
 import Balneario from '@/../public/images/balneario.webp';
 import TiroFederal from '@/../public/images/tiro-federal.webp';
 
-const imagesCarouselData: CarouselItemType[] = [
+const imagesCarouselData: ImagesCarouselItemType[] = [
 	{
 		title: 'Museo Histórico Regional',
-		children: (
-			<Image
-				quality={100}
-				fill={true}
-				sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-				src={MuseoRegional}
-				alt={'Museo Histórico Regional | San José'}
-			/>
-		),
+		src: MuseoRegional,
 	},
 	{
 		title: 'Molino Forclaz',
-		children: (
-			<Image
-				quality={100}
-				fill={true}
-				sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-				src={MolinoForclaz}
-				alt={'Molino Forclaz | San José'}
-			/>
-		),
+		src: MolinoForclaz,
 	},
 	{
 		title: 'Balneario San José',
-		children: (
-			<Image
-				quality={100}
-				fill={true}
-				sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-				src={Balneario}
-				alt={'Balneario | San José'}
-			/>
-		),
+		src: Balneario,
 	},
 	{
 		title: 'Termas San José',
-		children: (
-			<Image
-				quality={100}
-				fill={true}
-				sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-				src={Termas}
-				alt={'Termas | San José'}
-			/>
-		),
+		src: Termas,
 	},
 	{
 		title: 'Tiro Federal',
-		children: (
-			<Image
-				quality={100}
-				fill={true}
-				sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-				src={TiroFederal}
-				alt={'Tiro Federal | San José'}
-			/>
-		),
+		src: TiroFederal,
 	},
 ];
 

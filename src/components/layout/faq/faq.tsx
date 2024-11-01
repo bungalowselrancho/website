@@ -75,6 +75,20 @@ const faqs: AccordionProps[] = [
 		),
 	},
 	{
+		question: '¿Cuáles son los horarios de check-in y check-out?',
+		answer: (
+			<Text
+				variant={'pLeft'}
+				font={'Lato'}
+				color={'primary975'}
+				partOf={'AccordionAnswer'}
+			>
+				• <b>check-in</b> a partir de las 12:00 m.
+				<br />• <b>check-out</b> hasta las 10:00 a. m.
+			</Text>
+		),
+	},
+	{
 		question: '¿Cuál es su política de cancelación?',
 		answer: (
 			<Text

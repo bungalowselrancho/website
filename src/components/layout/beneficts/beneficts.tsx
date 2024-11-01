@@ -1,5 +1,5 @@
 //* Types
-import { CarouselItemType, DetailsCardProps } from '@/types';
+import { IconsCarouselItemType, DetailsCardProps } from '@/types';
 
 //* Components
 import { RevealFade } from '@/components/layout';
@@ -31,7 +31,7 @@ import { IconsCarousel, DetailsCard } from '@/components';
 import styles from './styles.module.css';
 
 //* Units Cards Data
-const facilitiesItems: CarouselItemType[] = [
+const facilitiesItems: IconsCarouselItemType[] = [
 	{
 		title: 'Parque',
 		children: <ParkIcon width={30} height={30} fill={'#0D5450'} />,
@@ -50,7 +50,7 @@ const facilitiesItems: CarouselItemType[] = [
 	},
 ];
 
-const equipementsItems: CarouselItemType[] = [
+const equipementsItems: IconsCarouselItemType[] = [
 	{
 		title: 'Horno',
 		children: <OvenIcon width={30} height={30} fill={'#0D5450'} />,
@@ -77,7 +77,7 @@ const equipementsItems: CarouselItemType[] = [
 	},
 ];
 
-const securityItems: CarouselItemType[] = [
+const securityItems: IconsCarouselItemType[] = [
 	{
 		title: 'Internet',
 		children: <WifiIcon width={30} height={30} fill={'#0D5450'} />,

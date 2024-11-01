@@ -14,6 +14,20 @@
 	width: 100%;
 	height: 100%;
 	margin: 28px 0 20px 0;
+
+	@media (min-width: 1120px) {
+		& {
+			margin: 0 0 24px 0;
+		}
+	}
+}
+
+.textContainer {
+	@media (min-width: 1085px) {
+		& {
+			margin-bottom: 32px;
+		}
+	}
 }
 
 .buttonContainer {

@@ -43,6 +43,11 @@
 
 .h3 {
 	font-size: 32px;
+	@media (min-width: 1120px) {
+		& {
+			font-size: 40px;
+		}
+	}
 }
 
 .h4 {

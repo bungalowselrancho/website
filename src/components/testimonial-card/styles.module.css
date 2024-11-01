@@ -14,18 +14,18 @@
 	transition: background-color 200ms ease-in-out;
 	box-shadow: 0 0 4px var(--accent-30);
 	user-select: none;
-}
 
-@media (min-width: 1100px) {
-	.cardBody {
-		height: 415px;
-		justify-content: space-between;
+	@media (min-width: 1100px) {
+		& {
+			height: 415px;
+			justify-content: space-between;
+		}
 	}
-}
 
-@media (hover: hover) and (pointer: fine) {
-	.cardBody:hover {
-		background-color: var(--primary-950);
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			background-color: var(--primary-950);
+		}
 	}
 }
 

@@ -12,6 +12,8 @@ import { LogoComplete } from '@/components/ui';
 //* Styles
 import styles from './styles.module.css';
 
+const offset = 60;
+
 export function Loader() {
 	return (
 		<motion.div
@@ -42,6 +44,44 @@ export function Transition(props: any) {
 	);
 }
 
+export function MenuAnimation(props: {
+	children: React.ReactNode;
+	isOpen: boolean;
+}) {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	});
+
+	return (
+		<motion.div
+			layout
+			className={styles.menuAnimation}
+			initial={{ opacity: 0, y: -15 }}
+			animate={{ opacity: 1, y: 0 }}
+		>
+			{props.children}
+		</motion.div>
+	);
+}
+
+export function ShortAnimation(props: any) {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	});
+
+	return (
+		<motion.div
+			layout
+			className={styles.animation}
+			initial={{ opacity: 0, y: 15 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ ease: 'easeInOut', duration: 0.6 }}
+		>
+			{props.children}
+		</motion.div>
+	);
+}
+
 export function Animation(props: any) {
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -59,8 +99,6 @@ export function Animation(props: any) {
 		</motion.div>
 	);
 }
-
-const offset = 60;
 
 export function RevealFade({
 	duration = 0.8,

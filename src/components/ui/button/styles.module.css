@@ -1,6 +1,7 @@
 .primary,
 .secondary,
 .tertiary {
+	max-width: fit-content;
 	color: var(--primary-975);
 	font-family: var(--font-lato-regular);
 	white-space: nowrap;
@@ -12,55 +13,56 @@
 
 .primary {
 	background-color: var(--primary-200);
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			cursor: pointer;
+			color: var(--primary-50);
+			background-color: var(--primary-700);
+		}
+	}
+
+	&:active {
+		cursor: pointer;
+		color: var(--primary-50);
+		background-color: var(--primary-800);
+	}
 }
 
 .secondary {
 	background-color: var(--secondary-200);
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			cursor: pointer;
+			color: var(--secondary-50);
+			background-color: var(--secondary-700);
+		}
+	}
+
+	&:active {
+		cursor: pointer;
+		color: var(--primary-50);
+		background-color: var(--secondary-800);
+	}
 }
 
 .tertiary {
 	color: var(--primary-50);
 	background-color: transparent;
 	border: 1px solid var(--primary-100);
-}
 
-/** Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-	.primary:hover {
-		cursor: pointer;
-		color: var(--primary-50);
-		background-color: var(--primary-700);
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			cursor: pointer;
+			color: var(--primary-975);
+			background-color: var(--primary-50);
+		}
 	}
 
-	.secondary:hover {
-		cursor: pointer;
-		color: var(--secondary-50);
-		background-color: var(--secondary-700);
-	}
-
-	.tertiary:hover {
+	&:active {
 		cursor: pointer;
 		color: var(--primary-975);
-		background-color: var(--primary-50);
+		background-color: var(--primary-100);
 	}
-}
-
-.primary:active {
-	cursor: pointer;
-	color: var(--primary-50);
-	background-color: var(--primary-800);
-}
-
-.secondary:active {
-	cursor: pointer;
-	color: var(--primary-50);
-	background-color: var(--secondary-800);
-}
-
-.tertiary:active {
-	cursor: pointer;
-	color: var(--primary-975);
-	background-color: var(--primary-100);
 }
 
 .small {
@@ -96,5 +98,5 @@
 
 .fullWidth {
 	width: 100%;
-	max-width: fit-content;
+	max-width: none;
 }

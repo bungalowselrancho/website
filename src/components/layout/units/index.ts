@@ -1,3 +1,3 @@
-import { Units, UnitsPath } from './units';
+import { Units, UnitsPath, DynamicUnitPath } from './units';
 
-export { Units, UnitsPath };
+export { Units, UnitsPath, DynamicUnitPath };

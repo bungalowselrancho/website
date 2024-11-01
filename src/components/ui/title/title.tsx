@@ -41,13 +41,23 @@ export default function Title(props: TitleProps) {
 					{props.children}
 				</h2>
 			)}
-			{variant == 'h3' && font && color && (
+			{variant == 'h3' && font && color && !partOf && (
 				<h3
 					className={`${styles[variant]} ${styles[font]} ${styles[color]}`}
 				>
 					{props.children}
 				</h3>
 			)}
+			{variant == 'h3' && font && color && partOf && (
+				<h3
+					className={`${styles[variant]} ${styles[font]} ${
+						styles[color]
+					} ${styles[`t${partOf}`]}`}
+				>
+					{props.children}
+				</h3>
+			)}
+
 			{variant == 'h4' && font && color && (
 				<h4
 					className={`${styles[variant]} ${styles[font]} ${styles[color]}`}

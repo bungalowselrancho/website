@@ -2,7 +2,8 @@
 import Link from 'next/link';
 
 //* Components
-import { Button, LogoMinified, MenuIcon } from '@/components/ui';
+import { Button, LogoMinified } from '@/components/ui';
+import { Menu } from '@/components';
 
 //* Styles
 import styles from './styles.module.css';
@@ -15,7 +16,7 @@ export default function Header() {
 					<LogoMinified width={48} height={31}></LogoMinified>
 				</Link>
 				<div className={styles.mobileHeader}>
-					<MenuIcon width={24} height={24}></MenuIcon>
+					<Menu />
 				</div>
 				<div className={styles.desktopHeader}>
 					<div className={styles.ctaContainer}>
@@ -34,7 +35,6 @@ export default function Header() {
 							</Link>
 						</div>
 						<a
-							className={styles.footerLink}
 							href="https://www.alquilerargentina.com/alojamientos/qc35-Bungalow-Bungalows-El-Rancho-San-Jos%C3%A9.html"
 							target="_blank"
 							rel="noopener noreferrer"

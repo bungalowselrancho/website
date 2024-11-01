@@ -8,5 +8,6 @@
 .tagText {
 	font-family: var(--font-lato-regular);
 	font-size: 14px;
+	line-height: 1.5;
 	color: var(--primary-100);
 }

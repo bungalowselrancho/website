@@ -12,11 +12,11 @@
 	background-color: var(--primary-975);
 	transition: background-color 200ms ease-in-out;
 	box-shadow: 0 0 4px var(--accent-30);
-}
 
-@media (min-width: 960px) {
-	.cardBody {
-		max-height: 555px;
+	@media (min-width: 960px) {
+		& {
+			max-height: 555px;
+		}
 	}
 }
 
