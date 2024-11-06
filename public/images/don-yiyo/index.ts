@@ -1,6 +1,6 @@
-import DonYiyoUnit1 from '@/../public/images/don-yiyo/don-yiyo-unit-1.webp';
-import DonYiyoUnit2 from '@/../public/images/don-yiyo/don-yiyo-unit-2.webp';
-import DonYiyoUnit3 from '@/../public/images/don-yiyo/don-yiyo-unit-3.webp';
-import DonYiyoUnit4 from '@/../public/images/don-yiyo/don-yiyo-unit-4.webp';
+import DonYiyoUnit1 from '@/../public/images/don-yiyo/donyiyo-unit-1.jpg';
+import DonYiyoUnit2 from '@/../public/images/don-yiyo/donyiyo-unit-2.jpg';
+import DonYiyoUnit3 from '@/../public/images/don-yiyo/donyiyo-unit-3.jpg';
+import DonYiyoUnit4 from '@/../public/images/don-yiyo/donyiyo-unit-4.jpg';
 
 export { DonYiyoUnit1, DonYiyoUnit2, DonYiyoUnit3, DonYiyoUnit4 };
