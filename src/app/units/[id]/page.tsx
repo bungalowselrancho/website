@@ -23,6 +23,8 @@ import {
 	ClaraUnit3,
 	ClaraUnit4,
 	ClaraUnit5,
+	ClaraUnit6,
+	ClaraUnit7,
 } from '@/../public/images/clara';
 
 import {
@@ -31,12 +33,15 @@ import {
 	GuilleUnit3,
 	GuilleUnit4,
 	GuilleUnit5,
+	GuilleUnit6,
 } from '@/../public/images/guille';
 
 import {
 	MauroIUnit1,
 	MauroIUnit2,
 	MauroIUnit3,
+	MauroIUnit4,
+	MauroIUnit5,
 } from '@/../public/images/mauro-i';
 
 import {
@@ -44,6 +49,8 @@ import {
 	MauroIIUnit2,
 	MauroIIUnit3,
 	MauroIIUnit4,
+	MauroIIUnit5,
+	MauroIIUnit6,
 } from '@/../public/images/mauro-ii';
 
 import {
@@ -51,12 +58,15 @@ import {
 	DonYiyoUnit2,
 	DonYiyoUnit3,
 	DonYiyoUnit4,
+	DonYiyoUnit5,
+	DonYiyoUnit6,
 } from '@/../public/images/don-yiyo';
 
 import {
 	MonoUnit1,
 	MonoUnit2,
 	MonoUnit3,
+	MonoUnit4,
 } from '@/../public/images/monoambiente';
 
 //* Units Data
@@ -70,7 +80,15 @@ const unitsData: DynamicUnitProps[] = [
 			'Cocina / Comedor + Camas de 1 plaza',
 			'Totalmente equipado',
 		],
-		images: [ClaraUnit1, ClaraUnit2, ClaraUnit3, ClaraUnit4, ClaraUnit5],
+		images: [
+			ClaraUnit1,
+			ClaraUnit2,
+			ClaraUnit3,
+			ClaraUnit4,
+			ClaraUnit5,
+			ClaraUnit6,
+			ClaraUnit7,
+		],
 		environments: 'Dos ambientes',
 		people: 5,
 		title: 'Clara',
@@ -90,6 +108,7 @@ const unitsData: DynamicUnitProps[] = [
 			GuilleUnit3,
 			GuilleUnit4,
 			GuilleUnit5,
+			GuilleUnit6,
 		],
 		environments: 'Dos ambientes',
 		people: 5,
@@ -104,7 +123,13 @@ const unitsData: DynamicUnitProps[] = [
 			'Camas de 1 plaza / 1½ plaza',
 			'Totalmente equipado',
 		],
-		images: [MauroIUnit1, MauroIUnit2, MauroIUnit3],
+		images: [
+			MauroIUnit1,
+			MauroIUnit2,
+			MauroIUnit3,
+			MauroIUnit4,
+			MauroIUnit5,
+		],
 		environments: 'Monoambiente',
 		people: 3,
 		title: 'Mauro I',
@@ -118,7 +143,14 @@ const unitsData: DynamicUnitProps[] = [
 			'Camas de 1 plaza / 2 plazas',
 			'Totalmente equipado',
 		],
-		images: [MauroIIUnit1, MauroIIUnit2, MauroIIUnit3, MauroIIUnit4],
+		images: [
+			MauroIIUnit1,
+			MauroIIUnit2,
+			MauroIIUnit3,
+			MauroIIUnit4,
+			MauroIIUnit5,
+			MauroIIUnit6,
+		],
 		environments: 'Monoambiente',
 		people: 3,
 		title: 'Mauro II',
@@ -132,7 +164,14 @@ const unitsData: DynamicUnitProps[] = [
 			'Camas de 1 plaza / 2 plazas',
 			'Totalmente equipado',
 		],
-		images: [DonYiyoUnit1, DonYiyoUnit2, DonYiyoUnit3, DonYiyoUnit4],
+		images: [
+			DonYiyoUnit1,
+			DonYiyoUnit2,
+			DonYiyoUnit3,
+			DonYiyoUnit4,
+			DonYiyoUnit5,
+			DonYiyoUnit6,
+		],
 		environments: 'Monoambiente (amplio)',
 		people: 4,
 		title: 'Don Yiyo',
@@ -146,7 +185,7 @@ const unitsData: DynamicUnitProps[] = [
 			'Camas de 1 plaza / 2 plazas',
 			'Totalmente equipado',
 		],
-		images: [MonoUnit1, MonoUnit2, MonoUnit3],
+		images: [MonoUnit1, MonoUnit2, MonoUnit3, MonoUnit4],
 		environments: 'Monoambiente',
 		people: 3,
 		title: 'Monoambiente',
