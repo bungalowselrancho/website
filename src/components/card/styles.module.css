@@ -23,7 +23,7 @@
 @media (hover: hover) and (pointer: fine) {
 	.cardBody:hover {
 		cursor: pointer;
-		background-color: var(--primary-950);
+		background-color: var(--black);
 	}
 }
 
