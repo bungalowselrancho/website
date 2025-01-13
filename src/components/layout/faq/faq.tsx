@@ -51,8 +51,11 @@ const faqs: AccordionProps[] = [
 			>
 				• <b>Pago anticipado</b> del <b>30%</b> en concepto de seña. El
 				saldo restante se abona al ingresar.
-				<br />• <b>Estadía mínima</b> de <b>2 noches</b>.<br />•{' '}
-				<b>Antelación mínima</b> para reservar de <b>1 día</b>.
+				<br />• Estadía mínima fuera de temporada: <b>2 noches</b>.
+				<br />• Estadía mínima en temporada alta: <b>3 noches</b>{' '}
+				(vacaciones verano e invierno).
+				<br />• Feriados largos: <b>paquetes promocionales</b>.
+				<br />• <b>Antelación mínima</b> para reservar de <b>1 día</b>.
 			</Text>
 		),
 	},
@@ -135,9 +138,7 @@ const faqs: AccordionProps[] = [
 				color={'primary975'}
 				partOf={'AccordionAnswer'}
 			>
-				• Hasta noviembre, promoción <b>Día San José</b>: venís 3 noches
-				y pagas solo 2.
-				<br />• Descuento del <b>20%</b> en termas San José.
+				• Descuento del <b>20%</b> en termas San José.
 				<br />• Descuentos en varios comercios adheridos a{' '}
 				<b>PRESTURI</b>.
 				<br />
